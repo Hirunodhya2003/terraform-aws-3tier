@@ -50,6 +50,73 @@ The infrastructure includes a VPC, public and private subnets, an Application Lo
         └─────────────────────────────────────┘
 ```
 
+## 📸 AWS Infrastructure Screenshots
+
+### 1. VPC Configuration
+![AWS VPC](screenshots/vpc1.png)
+
+AWS VPC configured with a `10.0.0.0/16` CIDR block as the networking foundation of the 3-tier architecture.
+
+### 2. VPC and Subnets
+![VPC and Subnets](screenshots/VPC%20subnet.png)
+
+Four public and private subnets distributed across multiple Availability Zones.
+
+### 3. Application Load Balancer
+![Application Load Balancer](screenshots/alb.png)
+
+Internet-facing Application Load Balancer configured to route HTTP traffic to the backend target group.
+
+### 4. Target Group Health
+![Target Group Healthy](screenshots/target%20Group%20Healthy.png)
+
+Backend target group showing a healthy EC2 target on port `8080`.
+
+### 5. Private EC2 Backend
+![Private EC2 Backend](screenshots/EC2.png)
+
+Private EC2 instance configured as the backend layer of the 3-tier infrastructure.
+
+### 6. RDS MySQL Database
+![RDS MySQL](screenshots/RDS.png)
+
+Private Amazon RDS MySQL database configured as the database layer.
+
+### 7. ALB Security Group
+![ALB Security Group](screenshots/alb%20SG.png)
+
+Security Group controlling inbound traffic to the Application Load Balancer.
+
+### 8. Backend Security Group
+![Backend Security Group](screenshots/backend%20SG.png)
+
+Security Group allowing backend traffic only from the Application Load Balancer.
+
+### 9. Database Security Group
+![Database Security Group](screenshots/database%20SG.png)
+
+Security Group restricting MySQL traffic to the backend security group.
+
+### 10. Terraform Project Structure
+![Terraform Project Structure](screenshots/terraform%20File%20Structure.png)
+
+Terraform project structure containing the main infrastructure configuration files.
+
+### 11. Terraform Networking Configuration
+![Terraform Networking Configuration](screenshots/Terraform%20configuration%20for%20VPC%2C%20public%20subnets%20and%20Internet%20Gateway..png)
+
+Terraform configuration for the VPC, public and private networking components.
+
+### 12. Terraform Security and Load Balancing
+![Terraform Security and ALB](screenshots/Terraform%20configuration%20for%20security%20groups%20and%20Application%20Load%20Balancer..png)
+
+Terraform configuration for Security Groups, Application Load Balancer and target group.
+
+### 13. Terraform Compute and Database
+![Terraform EC2 and RDS](screenshots/Terraform%20configuration%20for%20the%20private%20EC2%20backend%20and%20RDS%20MySQL%20database.png)
+
+Terraform configuration for the private EC2 backend and RDS MySQL database.
+
 ## ☁️ AWS Services Used
 
 * **Amazon VPC** – Network isolation
