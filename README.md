@@ -5,6 +5,7 @@ A hands-on AWS infrastructure project that demonstrates how to provision a basic
 The infrastructure includes a VPC, public and private subnets, an Application Load Balancer, a private EC2 backend server, and a private RDS MySQL database.
 
 ## 🏗️ Architecture
+![AWS 3-Tier Architecture](architecture.gif)
 
 ```text
                          Internet
@@ -82,7 +83,6 @@ terraform-aws-3tier/
 ├── .gitignore
 ├── .terraform.lock.hcl
 ├── README.md
-└── terraform.tfvars        # Not committed to GitHub
 ```
 
 ## 🔐 Security
